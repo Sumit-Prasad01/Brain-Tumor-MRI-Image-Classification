@@ -1,4 +1,5 @@
 # Brain-Tumor-MRI-Image-Classification
+## Folder Structure -
 ``` 
 brain-tumor-mri-classification/
 ├── README.md
