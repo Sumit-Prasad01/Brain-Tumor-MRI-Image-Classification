@@ -1,56 +1,37 @@
 # Brain-Tumor-MRI-Image-Classification
 ## Folder Structure -
 ``` 
-brain-tumor-mri-classification/
-├── README.md
-├── requirements.txt
-├── .gitignore
+brain-tumor-classification/
 │
-├── data/
-│   ├── raw/                    # Original dataset
-│   │   ├── glioma/
-│   │   ├── meningioma/
-│   │   ├── notumor/
-│   │   └── pituitary/
-│   └── processed/              # Preprocessed images (optional)
+├── 📄 README.md
+├── 📄 requirements.txt
 │
-├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_data_preprocessing.ipynb
-│   ├── 03_custom_cnn_training.ipynb
-│   ├── 04_transfer_learning.ipynb
-│   └── 05_model_comparison.ipynb
+├── 📁 data/
+│   └── raw/                    # Download dataset here
+│       ├── glioma/
+│       ├── meningioma/
+│       ├── notumor/
+│       └── pituitary/
 │
-├── src/
-│   ├── __init__.py
-│   ├── data_preprocessing.py
-│   ├── model_builder.py
-│   ├── train.py
-│   ├── evaluate.py
-│   └── utils.py
+├── 📁 notebooks/
+│   ├── 1_data_exploration.ipynb
+│   ├── 2_data_preprocessing.ipynb
+│   ├── 3_custom_cnn.ipynb
+│   ├── 4_transfer_learning.ipynb
+│   └── 5_model_comparison.ipynb
 │
-├── models/
-│   ├── custom_cnn.h5
-│   ├── resnet50_transfer.h5
-│   ├── mobilenetv2_transfer.h5
+├── 📁 models/
+│   ├── custom_cnn_model.h5
+│   ├── resnet50_model.h5
+│   ├── mobilenet_model.h5
 │   └── best_model.h5
 │
-├── results/
-│   ├── training_history/
-│   │   ├── custom_cnn_history.png
-│   │   └── transfer_learning_history.png
-│   ├── confusion_matrices/
-│   │   ├── custom_cnn_cm.png
-│   │   └── transfer_learning_cm.png
-│   └── model_comparison.csv
+├── 📁 app/
+│   ├── streamlit_app.py        # Main web application
+│   └── utils.py               # Helper functions for app
 │
-├── streamlit_app/
-│   ├── app.py                  # Main Streamlit application
-│   ├── model_utils.py          # Model loading and prediction functions
-│   └── assets/                 # Images, CSS, etc. for the app
-│       └── sample_images/
-│
-└── docs/
-    ├── project_report.md
-    └── model_architecture.md
+└── 📁 results/
+    ├── confusion_matrices.png
+    ├── training_plots.png
+    └── model_comparison.csv
 ```
