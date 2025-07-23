@@ -7,7 +7,17 @@ brain-tumor-classification/
 ├── 📄 requirements.txt
 │
 ├── 📁 data/
-│   └── raw/                    # Download dataset here
+│   └── train/                    
+│       ├── glioma/
+│       ├── meningioma/
+│       ├── notumor/
+│       └── pituitary/
+|   └── test/                    
+│       ├── glioma/
+│       ├── meningioma/
+│       ├── notumor/
+│       └── pituitary/
+|   └── valid/                    
 │       ├── glioma/
 │       ├── meningioma/
 │       ├── notumor/
@@ -16,19 +26,16 @@ brain-tumor-classification/
 ├── 📁 notebooks/
 │   ├── 1_data_exploration.ipynb
 │   ├── 2_data_preprocessing.ipynb
-│   ├── 3_custom_cnn.ipynb
-│   ├── 4_transfer_learning.ipynb
-│   └── 5_model_comparison.ipynb
+│   ├── 3_Transfer_Learning.ipynb│   
+│   └── 4_Model_Comparison.ipynb
 │
 ├── 📁 models/
-│   ├── custom_cnn_model.h5
-│   ├── resnet50_model.h5
-│   ├── mobilenet_model.h5
-│   └── best_model.h5
+│   ├── Custom_CNN_Brain_Tumor_MRI.keras   # Custom Cnn model
+│   └── best_model.Keras # Transfer Learning Model
 │
 ├── 📁 app/
 │   ├── streamlit_app.py        # Main web application
-│   └── utils.py               # Helper functions for app
+│   └── api.py               # FastApi Application
 │
 └── 📁 results/
     ├── confusion_matrices.png
