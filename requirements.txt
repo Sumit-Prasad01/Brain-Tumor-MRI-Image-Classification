@@ -12,3 +12,7 @@ pandas
 seaborn
 statsmodels
 streamlit
+fastapi
+uvicorn
+pillow
+python-multipart

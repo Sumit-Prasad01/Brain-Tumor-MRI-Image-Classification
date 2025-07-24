@@ -7,7 +7,8 @@ from PIL import Image
 # Load the best fine-tuned model
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model("../models/ResNet50_(Transfer_Learning)_fine_tuned_model.keras")
+    # model = tf.keras.models.load_model("../models/ResNet50_(Transfer_Learning)_fine_tuned_model.keras")
+    model = tf.keras.models.load_model("../models/Custom_CNN_Brain_Tumor_MRI.keras")
     return model
 
 model = load_model()
