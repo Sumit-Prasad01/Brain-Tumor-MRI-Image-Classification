@@ -7,7 +7,7 @@ CLASS_NAMES = ['glioma', 'meningioma', 'no_tumor', 'pituitary']
 
 async def load_model_and_predict(file, model_type):
     # Load model
-    model_path = f"models/{'custom_cnn_model' if model_type == 'custom' else 'resnet50_transfer_model'}.keras"
+    model_path = f"../models/Custom_CNN_Brain_Tumor_MRI.keras"
     model = tf.keras.models.load_model(model_path)
 
     # Preprocess image
