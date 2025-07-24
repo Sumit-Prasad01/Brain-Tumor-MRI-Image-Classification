@@ -1,5 +1,7 @@
 # Brain Tumor MRI Image Classification with Transfer Learning
 
+- GitHub Link - https://github.com/Sumit-Prasad01/Brain-Tumor-MRI-Image-Classification
+
 This project uses deep learning to classify brain MRI images into four categories:
 
 - Glioma
@@ -132,3 +134,4 @@ Upload an image and get:
 - Bar chart of probabilities
 
 ---
+
